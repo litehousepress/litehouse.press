@@ -1,0 +1,33 @@
+.section-hero {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/static/hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 32px;
+    box-sizing: border-box;
+
+    svg {
+        height: 80px;
+        @media (max-width: 640px) {
+            height: 50px;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        color: #026a82;
+        letter-spacing: 4px;
+        font-size: 18px;
+        text-transform: uppercase;
+        @media (max-width: 640px) {
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    }
+}

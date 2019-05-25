@@ -1,0 +1,33 @@
+.header {
+    width: 100vw;
+    padding: 32px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .header__logo {
+        svg {
+            height: 24px;
+        }
+    }
+
+    .header__nav {
+        display: none;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                font-size: 18px;
+                font-weight: 300;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-right: 16px;
+                color: #3f3d56;
+            }
+        }
+    }
+}
