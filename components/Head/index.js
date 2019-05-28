@@ -6,7 +6,7 @@ export default () => (
         <meta charSet="utf-8" />
         <title>Litehouse</title>
         <meta name="description" content="Bringing the new frontiers of journalistm. " />
-        <meta property="og:title" content="Jetcheater" />
+        <meta property="og:title" content="Litehouse" />
         <meta property="og:description" content="Bringing the new frontiers of journalistm. " />
         <meta name="og:url" content="https://www.litehouse.press" />
         <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png" />
