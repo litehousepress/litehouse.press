@@ -16,5 +16,9 @@ export default () => (
         <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+            name="google-site-verification"
+            content="V6hnLBuzqWFOnulxZ8lND7Vi1g1WlGv7cjRGWe7FBcM"
+        />
     </Head>
 );
