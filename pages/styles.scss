@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+@font-face {
+    font-family: 'Didot';
+    src: url('/static/fonts/Didot-Bold.woff') format('woff2'),
+        url('/static/fonts/Didot-Bold.woff2') format('woff');
+}
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Didot', serif;
 }
