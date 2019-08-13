@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
-@font-face {
-    font-family: 'Didot';
-    src: url('/static/fonts/Didot-Bold.woff') format('woff2'),
-        url('/static/fonts/Didot-Bold.woff2') format('woff');
-}
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
-    font-family: 'Didot', serif;
+    font-family: 'Rubik', sans-serif;
 }

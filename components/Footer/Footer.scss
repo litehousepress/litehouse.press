@@ -1,32 +1,21 @@
 @import '../../styles/variables.scss';
 
-.header {
+.footer {
     width: 100%;
     padding: 32px;
+    border-top: 1px lighten($color-cadet-grey, 30%) solid;
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
     background: $color-white;
-    border-bottom: 1px lighten($color-cadet-grey, 30%) solid;
 
-    .header__logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        svg {
-            width: 32px;
-            height: 32px;
-        }
+    @media (max-width: 850px) {
+        flex-direction: column;
     }
 
-    nav.header__nav {
+    nav.footer__nav {
         padding: 0;
         margin: 0;
 
@@ -43,12 +32,12 @@
                 &:after {
                     content: '―';
                     position: absolute;
-                    color: $color-cadet-grey;
                     right: -16px;
                     top: 8px;
-                    opacity: 0.5;
+                    opacity: 0.1;
                 }
 
+                &:first-child:after,
                 &:last-child:after {
                     display: none;
                 }
@@ -69,6 +58,18 @@
                 a:hover {
                     color: darken($color-brand, 10%);
                 }
+
+                &.logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                    svg {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
             }
 
             @media (max-width: 520px) {
@@ -82,8 +83,14 @@
                 }
             }
         }
-        @media (max-width: 850px) {
-            display: none;
+    }
+
+    .footer__copyright {
+        p {
+            font-size: 13px;
+            color: $color-cadet-grey;
+            letter-spacing: 0.48px;
+            font-weight: 300;
         }
     }
 }
