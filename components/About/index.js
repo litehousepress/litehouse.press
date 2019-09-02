@@ -2,7 +2,7 @@ function About(props) {
     return (
         <section className="section section--blue" id="about">
             <div className="container">
-                <h2>We Are Litehouse</h2>
+                <h2 className="align-center">We Are Litehouse</h2>
                 <div className="container-flex about-block">
                     <svg viewBox="0 0 940.1006 814.72886">
                         <ellipse
@@ -193,7 +193,7 @@ function About(props) {
                         needs of modern news organizations and freelance journalists.
                     </p>
                 </div>
-                <div className="container-flex about-block">
+                <div className="container-flex about-block container-flex--rev ">
                     <p className="lead">
                         Our mission is to bring cutting-edge technologies like React, GraphQL, and
                         Node.js and modern user experience into the news environment.

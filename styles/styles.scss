@@ -12,13 +12,22 @@ h1 {
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: $color-blueberry;
+    color: $color-white;
+    max-width: 65%;
+
     @media (max-width: 960px) {
         font-size: 64px;
+        line-height: 1;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 48px;
+        line-height: 1;
     }
 
     @media (max-width: 520px) {
-        font-size: 48px;
+        font-size: 42px;
+        line-height: 1;
     }
 }
 
@@ -200,7 +209,7 @@ header {
     }
 
     .logo {
-        color: $color-independence;
+        color: $color-white;
         font-size: 40px;
         @media (max-width: 960px) {
         }
@@ -229,8 +238,16 @@ header {
                 font-size: 17px;
                 cursor: pointer;
                 transition: color 0.24s;
+                margin-left: 4px;
+                background: linear-gradient(to bottom, $color-white 0%, $color-white 100%);
+                background-position: 0 100%;
+                background-repeat: repeat-x;
+                background-size: 0px 0px;
+                transition: all 0.24s;
+                color: $color-white;
                 &:hover {
                     color: $color-blueberry;
+                    background-size: 4px 58px;
                 }
             }
         }
@@ -258,7 +275,7 @@ header {
 
     &.section--blue {
         background: $color-blueberry;
-        padding: 100px 64px;
+        padding: 200px 64px 100px;
 
         h2,
         h3,
@@ -312,7 +329,10 @@ header {
     width: 101vw;
     margin-bottom: -4px;
 }
-
+.container--hero {
+    max-width: 100%;
+    padding: 0;
+}
 .container-flex {
     display: flex;
     align-items: center;
@@ -335,6 +355,11 @@ header {
         @media (max-width: 520px) {
             flex-direction: column-reverse;
         }
+    }
+
+    &.container-flex--full {
+        max-width: 100%;
+        padding: 0;
     }
 }
 
@@ -456,6 +481,10 @@ button {
             margin-left: 48px;
         }
     }
+
+    @media (max-width: 520px) {
+        padding: 24px 0;
+    }
 }
 
 .decoration-top {
@@ -467,4 +496,15 @@ button {
 .decoration-bottom {
     width: 101vw;
     height: auto;
+}
+
+#about {
+    padding: 200px 64px 0;
+}
+#contact {
+    padding: 100px 64px 100px;
+}
+
+.align-center {
+    text-align: center;
 }
