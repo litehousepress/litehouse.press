@@ -9,7 +9,7 @@ export default () => (
             name="description"
             content="We are a team of experienced journalists, storytellers, developers, designers and creative experts that are building platforms tailored to the needs of modern news organizations and freelance journalists."
         />
-        <meta property="og:title" content="Jetcheater" />
+        <meta property="og:title" content="Litehouse" />
         <meta
             property="og:description"
             content="We are a team of experienced journalists, storytellers, developers, designers and creative experts that are building platforms tailored to the needs of modern news organizations and freelance journalists."

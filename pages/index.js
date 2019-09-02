@@ -1,11 +1,13 @@
 import Page from '../components/Page';
 import Head from '../components/Head';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Header from '../components/Header';
 import About from '../components/About';
-import Products from '../components/Products';
-import Footer from '../components/Footer';
-import './styles.scss';
+import Craft from '../components/Craft';
+import Roadmap from '../components/Roadmap';
+import Team from '../components/Team';
+import Contact from '../components/Contact';
+import '../styles/styles.scss';
 
 function Home() {
     return (
@@ -14,8 +16,10 @@ function Home() {
             <Header />
             <Hero />
             <About />
-            <Products />
-            <Footer />
+            <Craft />
+            <Roadmap />
+            <Team />
+            <Contact />
         </Page>
     );
 }
