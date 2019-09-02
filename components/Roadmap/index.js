@@ -14,9 +14,9 @@ function Roadmap(props) {
                                 <g
                                     id="Web"
                                     stroke="none"
-                                    stroke-width="1"
+                                    strokeWidth="1"
                                     fill="none"
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                 >
                                     <g
                                         id="Website"
@@ -65,9 +65,9 @@ function Roadmap(props) {
                                 <g
                                     id="Web"
                                     stroke="none"
-                                    stroke-width="1"
+                                    strokeWidth="1"
                                     fill="none"
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                 >
                                     <g
                                         id="Website"
@@ -123,9 +123,9 @@ function Roadmap(props) {
                                 <g
                                     id="Web"
                                     stroke="none"
-                                    stroke-width="1"
+                                    strokeWidth="1"
                                     fill="none"
-                                    fill-rule="evenodd"
+                                    fillRule="evenodd"
                                 >
                                     <g
                                         id="Website"

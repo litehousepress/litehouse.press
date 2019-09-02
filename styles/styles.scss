@@ -180,7 +180,7 @@ a.link {
             font-size: 38px;
         }
         @media (max-width: 520px) {
-            font-size: 28px;
+            font-size: 21px;
         }
 
         &:hover {
@@ -276,7 +276,9 @@ header {
     &.section--blue {
         background: $color-blueberry;
         padding: 200px 64px 100px;
-
+        @media (max-width: 520px) {
+            padding: 100px 32px 100px;
+        }
         h2,
         h3,
         h4,
@@ -326,7 +328,7 @@ header {
 }
 
 .container--full {
-    width: 101vw;
+    width: 100vw;
     margin-bottom: -4px;
 }
 .container--hero {
@@ -345,6 +347,7 @@ header {
 
     @media (max-width: 520px) {
         flex-direction: column;
+        padding: 0 24px;
     }
 
     &.container-flex--columns {
@@ -367,7 +370,6 @@ header {
     display: grid;
     text-align: center;
     justify-items: center;
-    margin: 0 auto;
     grid-gap: 32px;
     grid-template-columns: 300px 300px 300px;
 
@@ -488,23 +490,35 @@ button {
 }
 
 .decoration-top {
-    width: 101vw;
+    width: calc(100vw + 2px);
     margin-bottom: 150px;
+    margin-left: -1px;
+    margin-right: -1px;
     height: auto;
 }
 
 .decoration-bottom {
-    width: 101vw;
+    width: calc(100vw + 2px);
+    margin-left: -1px;
+    margin-right: -1px;
     height: auto;
 }
 
 #about {
-    padding: 200px 64px 0;
+    padding-top: 50px;
+    padding-bottom: 0;
 }
 #contact {
-    padding: 100px 64px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .align-center {
     text-align: center;
+}
+
+span.hide {
+    @media (max-width: 550px) {
+        display: none;
+    }
 }

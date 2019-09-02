@@ -12,7 +12,7 @@ function Craft(props) {
             </div>
             <div className="container">
                 <svg viewBox="0 0 100 128" className="craft-logo">
-                    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Web" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                         <g
                             id="Website"
                             transform="translate(-670.000000, -2946.000000)"
@@ -64,7 +64,9 @@ function Craft(props) {
                 </p>
                 <img src="/static/screen1.png" className="screen" />
                 <Link href="#contact">
-                    <button className="btn">Contact Us For More Details</button>
+                    <button className="btn">
+                        Contact Us<span className="hide"> For More Details</span>
+                    </button>
                 </Link>
             </div>
             <div className="container--full">
