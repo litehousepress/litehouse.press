@@ -104,9 +104,9 @@ img {
     &.team-right {
         max-width: 412px;
         margin-left: 64px;
-        @media (max-width: 520px) {
+        @media (max-width: 950px) {
             margin-left: 0;
-            max-width: 100%;
+            max-width: 480px;
             margin-bottom: 24px;
         }
     }
@@ -114,9 +114,9 @@ img {
     &.team-left {
         max-width: 412px;
         margin-right: 64px;
-        @media (max-width: 520px) {
+        @media (max-width: 950px) {
             margin-right: 0;
-            max-width: 100%;
+            max-width: 480px;
             margin-bottom: 24px;
         }
     }
@@ -211,11 +211,12 @@ header {
     .logo {
         color: $color-white;
         font-size: 40px;
+        letter-spacing: -2px;
         @media (max-width: 960px) {
         }
         font-weight: 400;
         span {
-            font-weight: 700;
+            font-weight: 500;
         }
         @media (max-width: 520px) {
             font-size: 32px;
@@ -345,8 +346,9 @@ header {
     margin: 0 auto;
     justify-content: center;
 
-    @media (max-width: 520px) {
+    @media (max-width: 950px) {
         flex-direction: column;
+        align-items: flex-start;
         padding: 0 24px;
     }
 
@@ -355,7 +357,8 @@ header {
     }
 
     &.container-flex--rev {
-        @media (max-width: 520px) {
+        @media (max-width: 950px) {
+            align-items: flex-start;
             flex-direction: column-reverse;
         }
     }
@@ -398,7 +401,7 @@ header {
     padding: 62px 0;
     box-sizing: border-box;
 
-    @media (max-width: 520px) {
+    @media (max-width: 950px) {
         padding: 32px;
     }
 }
@@ -421,11 +424,16 @@ header {
 
 .screen {
     box-shadow: 0 0 10px rgba($color-cadet-grey, 0.4);
+    border-radius: 10px;
+    margin-bottom: 32px;
+    @media (max-width: 520px) {
+        border-radius: 5px;
+    }
 }
 
 button {
     appearance: none;
-
+    outline: none;
     &.btn {
         background: $color-blueberry;
         padding: 0 32px;
@@ -433,15 +441,14 @@ button {
         color: $color-white;
         display: block;
         text-transform: uppercase;
-        font-size: 19px;
-        letter-spacing: 1px;
+        font-size: 17px;
         font-weight: 700;
         border-radius: 24px;
         border: none;
         margin: 48px auto 0 auto;
         cursor: pointer;
         transition: all 0.24s;
-
+        box-shadow: 0 0 1px 7px lighten($color-blueberry, 30%);
         &:hover {
             background: lighten($color-blueberry, 5%);
         }
@@ -482,10 +489,34 @@ button {
         &:last-child {
             margin-left: 48px;
         }
+        @media (max-width: 950px) {
+            width: 100%;
+            &:first-child {
+                margin-top: 32px;
+                margin-right: 0;
+            }
+            &:last-child {
+                margin-left: 0;
+            }
+        }
     }
 
     @media (max-width: 520px) {
         padding: 24px 0;
+    }
+
+    @media (max-width: 950px) {
+        align-items: center;
+    }
+
+    &.container-flex--columns {
+        flex-direction: column;
+    }
+
+    &.container-flex--rev {
+        @media (max-width: 950px) {
+            align-items: center;
+        }
     }
 }
 
@@ -502,6 +533,7 @@ button {
     margin-left: -1px;
     margin-right: -1px;
     height: auto;
+    margin-top: 10px;
 }
 
 #about {
