@@ -18,18 +18,13 @@ function Products(props) {
                 <div className="container-flex container-flex--rev team-mate">
                     <div>
                         <h3>Tomáš Randus</h3>
-                        <h4>Chief Technical Officer, co-founder</h4>
+                        <h4>Chief Technology Officer, co-founder</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum
-                            neque ac lobortis pretium. Aenean sed mauris mauris. Donec mi mauris,
-                            ultricies non risus at, rutrum faucibus est. Vivamus semper fermentum
-                            orci sit amet bibendum. Proin pretium nibh ac augue hendrerit rutrum.
-                            Integer elementum, risus sit amet fringilla mattis, augue purus porta
-                            diam, sed auctor quam lacus ut neque. Fusce ut purus vel felis fringilla
-                            tincidunt. Fusce eleifend felis id finibus consequat. In ex ex, tempus a
-                            risus nec, tempor aliquet arcu. Praesent suscipit ut erat eget varius.
-                            Pellentesque metus turpis, rhoncus non gravida at, bibendum tincidunt
-                            nibh. Aliquam ut diam tellus.
+                            Software engineer and enthusiastic innovator with a strong background in
+                            media literacy and education. During the last two decades, he worked for
+                            media houses and business companies including Sanoma Media, Radio Free
+                            Europe/Radio Liberty, and Citrix. In the past, he founded or was a part
+                            of several startup companies.
                         </p>
                     </div>
                     <img src="/static/team/tomas.png" className="team-right" />
@@ -43,10 +38,10 @@ function Products(props) {
                         <p>
                             Former Web Designer and Lead Data Visualization Designer at Radio Free
                             Europe/Radio Liberty - his team’s storytelling projects won or has been
-                            nominated for several internationaly recognized journalistic awards
-                            including Association for International Broadcasting Award, Lovie Award
-                            or Webby Award. Before joining RFE/RL he worked as a photo-journalist
-                            and reporter for various Czech media houses. In 2017 he joined the Czech
+                            nominated for several widely recognized journalistic awards including
+                            Association for International Broadcasting Award, Lovie Award or Webby
+                            Award. Before joining RFE/RL he worked as a photo-journalist and
+                            reporter for various Czech media houses. In 2017 he joined the Czech
                             branch of Doctors Without Borders as a pro-bono visualization designer
                             and digital storyteller.
                         </p>

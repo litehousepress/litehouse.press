@@ -522,3 +522,10 @@ span.hide {
         display: none;
     }
 }
+
+small {
+    display: block;
+    color: $color-white;
+    padding-top: 48px;
+    opacity: 0.4;
+}
