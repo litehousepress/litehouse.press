@@ -24,7 +24,8 @@ function Products(props) {
                             media literacy and education. During the last two decades, he worked for
                             media houses and business companies including Sanoma Media, Radio Free
                             Europe/Radio Liberty, and Citrix. In the past, he founded or was a part
-                            of several startup companies.
+                            of several startup companies. Got his New Media master's degree from
+                            Charles University in Prague.
                         </p>
                     </div>
                     <img src="/static/team/tomas.png" className="team-right" />
@@ -72,16 +73,11 @@ function Products(props) {
                         <h3>Lukáš Král</h3>
                         <h4>Software Architect</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum
-                            neque ac lobortis pretium. Aenean sed mauris mauris. Donec mi mauris,
-                            ultricies non risus at, rutrum faucibus est. Vivamus semper fermentum
-                            orci sit amet bibendum. Proin pretium nibh ac augue hendrerit rutrum.
-                            Integer elementum, risus sit amet fringilla mattis, augue purus porta
-                            diam, sed auctor quam lacus ut neque. Fusce ut purus vel felis fringilla
-                            tincidunt. Fusce eleifend felis id finibus consequat. In ex ex, tempus a
-                            risus nec, tempor aliquet arcu. Praesent suscipit ut erat eget varius.
-                            Pellentesque metus turpis, rhoncus non gravida at, bibendum tincidunt
-                            nibh. Aliquam ut diam tellus.
+                            Former lead front-end engineer at Radio Free Europe/Radio Liberty.
+                            Full-stack software developer with deep knowledge of business
+                            applications and publishing platforms. Microsoft Typescript expert, data
+                            layer & tooling specialist. In 2008, he gained his master's degree from
+                            Czech Technical University in Prague.
                         </p>
                     </div>
                 </div>
@@ -91,16 +87,12 @@ function Products(props) {
                         <h3>Roman Schejbal</h3>
                         <h4>Innovation Specialist</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum
-                            neque ac lobortis pretium. Aenean sed mauris mauris. Donec mi mauris,
-                            ultricies non risus at, rutrum faucibus est. Vivamus semper fermentum
-                            orci sit amet bibendum. Proin pretium nibh ac augue hendrerit rutrum.
-                            Integer elementum, risus sit amet fringilla mattis, augue purus porta
-                            diam, sed auctor quam lacus ut neque. Fusce ut purus vel felis fringilla
-                            tincidunt. Fusce eleifend felis id finibus consequat. In ex ex, tempus a
-                            risus nec, tempor aliquet arcu. Praesent suscipit ut erat eget varius.
-                            Pellentesque metus turpis, rhoncus non gravida at, bibendum tincidunt
-                            nibh. Aliquam ut diam tellus.
+                            Tutor and deeply skilled software development engineer with expertise in
+                            code optimization, neural networking, and machine learning. During the
+                            last decade, he helped many worldwide startups and corporates with
+                            performance issues and code refactoring. He is permanently contributing
+                            to the front-end community as a tutor and co-organizer of ReasonML
+                            Prague meetups.
                         </p>
                     </div>
                     <img src="/static/team/roman.png" className="team-right" />
