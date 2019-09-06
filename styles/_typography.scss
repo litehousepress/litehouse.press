@@ -1,0 +1,241 @@
+h1 {
+    font-size: 42px;
+    font-family: $font-primary;
+    position: absolute;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    bottom: 64px;
+    left: 48px;
+    right: 48px;
+    display: block;
+    line-height: 1;
+    max-width: 16ch;
+    color: $color-white;
+
+    @media (max-width: $breakpoint-tablet) {
+        left: 32px;
+        right: 32px;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 62px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 72px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 92px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-family: $font-primary;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 58px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 64px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 72px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    font-family: $font-primary;
+    font-weight: 500;
+    margin: 0;
+    display: block;
+    padding: 0 0 16px 0;
+    line-height: 1;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 36px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 48px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 52px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-family: $font-primary;
+    font-weight: 400;
+    margin: 0;
+    padding: 24px 0 24px 0;
+    display: block;
+    line-height: 1;
+    position: relative;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 26px;
+        padding: 16px 0 12px 0;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 32px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 36px;
+    }
+
+    &:before {
+        width: 15%;
+        position: absolute;
+        content: '';
+        height: 4px;
+        top: -2px;
+        background: lighten($color-blueberry, 20%);
+        @media (max-width: $breakpoint-desktop) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+h5 {
+    font-size: 21px;
+    font-family: $font-primary;
+    font-weight: 500;
+    margin: 0;
+    padding: 16px 0 0 0;
+    line-height: 1;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 23px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 26px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 28px;
+    }
+}
+
+p {
+    font-size: 17px;
+    font-family: $font-primary;
+    font-weight: 300;
+    margin: 0;
+    padding: 16px 0;
+    line-height: 1.2;
+    max-width: 60ch;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 21px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 22px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 24px;
+    }
+
+    &.lead {
+        font-size: 24px;
+        margin: 24px 0;
+        padding: 24px 0;
+        max-width: 39ch;
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 28px;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 32px;
+        }
+
+        @media (min-width: $breakpoint-big) {
+            font-size: 36px;
+        }
+    }
+}
+
+a.link {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: $font-primary;
+    margin: 24px 0;
+    padding: 4px 0;
+    line-height: 1.2;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to bottom, $color-white 0%, $color-white 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: all 0.24s;
+    color: $color-white;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 21px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 22px;
+    }
+
+    @media (min-width: $breakpoint-big) {
+        font-size: 24px;
+    }
+
+    &.link--big {
+        font-size: 24px;
+        font-weight: 500;
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 28px;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 32px;
+        }
+
+        @media (min-width: $breakpoint-big) {
+            font-size: 36px;
+        }
+
+        &:hover {
+            color: $color-blueberry;
+            background-size: 4px 58px;
+        }
+    }
+
+    &:hover {
+        background-size: 4px 50px;
+    }
+}
+
+small {
+    display: block;
+    font-family: $font-primary;
+    color: $color-white;
+    padding-top: 24px;
+}

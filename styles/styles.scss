@@ -1,563 +1,64 @@
-@import './variables.scss';
+@import './variables';
+@import './typography';
+@import './header';
+@import './button';
+@import './section';
+@import './hero';
 
 body {
     margin: 0;
-    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
 
-h1 {
-    font-size: 85px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    color: $color-white;
-    max-width: 65%;
-
-    @media (max-width: 960px) {
-        font-size: 64px;
-        line-height: 1;
-    }
-
-    @media (max-width: 800px) {
-        font-size: 48px;
-        line-height: 1;
-    }
-
-    @media (max-width: 520px) {
-        font-size: 42px;
-        line-height: 1;
-    }
-}
-
-h2 {
-    font-size: 72px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    color: $color-blueberry;
-    @media (max-width: 960px) {
-        font-size: 54px;
-    }
-
-    @media (max-width: 520px) {
-        font-size: 42px;
-    }
-}
-
-h3 {
-    font-size: 60px;
-    font-weight: 500;
-    margin: 0;
-    display: block;
-    padding: 0 0 16px 0;
-    line-height: 1;
-    color: $color-blueberry;
-    @media (max-width: 960px) {
-        font-size: 48px;
-    }
-
-    @media (max-width: 520px) {
-        font-size: 32px;
-    }
-}
-
-h4 {
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0;
-    padding: 24px 0 24px 0;
-    display: block;
-    line-height: 1;
-    color: $color-cadet-grey;
-    position: relative;
-    @media (max-width: 960px) {
-    }
-
-    &:before {
-        width: 15%;
-        position: absolute;
-        content: '';
-        height: 4px;
-        top: -2px;
-        background: lighten($color-blueberry, 20%);
-    }
-}
-
-h5 {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
-    padding: 16px 0 0 0;
-    line-height: 1;
-    color: $color-cadet-grey;
-    @media (max-width: 960px) {
-    }
-}
-
-img {
-    width: 100%;
-    height: auto;
-
-    &.team-right {
-        max-width: 412px;
-        margin-left: 64px;
-        @media (max-width: 950px) {
-            margin-left: 0;
-            max-width: 480px;
-            margin-bottom: 24px;
-        }
-    }
-
-    &.team-left {
-        max-width: 412px;
-        margin-right: 64px;
-        @media (max-width: 950px) {
-            margin-right: 0;
-            max-width: 480px;
-            margin-bottom: 24px;
-        }
-    }
-}
-
-p {
-    font-size: 21px;
-    margin: 0;
-    padding: 16px 0;
-    line-height: 1.2;
-    max-width: 60ch;
-    color: $color-blueberry;
-    @media (max-width: 960px) {
-        font-size: 20px;
-    }
-
-    @media (max-width: 520px) {
-        max-width: 100%;
-        font-size: 19px;
-    }
-
-    &.lead {
-        font-size: 32px;
-        margin: 24px 0;
-        padding: 24px 0;
-        max-width: 65%;
-        color: $color-cadet-grey;
-        @media (max-width: 960px) {
-            max-width: 100%;
-            font-size: 28px;
-        }
-        @media (max-width: 520px) {
-            max-width: 100%;
-            font-size: 24px;
-        }
-    }
-}
-
-a.link {
-    font-size: 32px;
-    margin: 24px 0;
-    padding: 4px 0;
-    line-height: 1.2;
-    text-decoration: none;
-    background: linear-gradient(to bottom, $color-white 0%, $color-white 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    transition: all 0.24s;
-    @media (max-width: 960px) {
-        font-size: 21px;
-    }
-    @media (max-width: 520px) {
-        font-size: 17px;
-    }
-
-    &.link--big {
-        font-size: 42px;
-        font-weight: 500;
-        @media (max-width: 960px) {
-            font-size: 38px;
-        }
-        @media (max-width: 520px) {
-            font-size: 21px;
-        }
-
-        &:hover {
-            background-size: 4px 58px;
-        }
-    }
-
-    &:hover {
-        background-size: 4px 50px;
-    }
-}
-
-header {
-    display: flex;
-    padding: 48px;
-    box-sizing: border-box;
-    position: absolute;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    @media (max-width: 520px) {
-        padding: 32px;
-    }
-
-    .logo {
-        color: $color-white;
-        font-size: 40px;
-        letter-spacing: -2px;
-        @media (max-width: 960px) {
-        }
-        font-weight: 400;
-        span {
-            font-weight: 500;
-        }
-        @media (max-width: 520px) {
-            font-size: 32px;
-        }
-    }
-
-    nav {
-        padding: 0;
-        margin: 0;
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-
-            li {
-                padding: 16px;
-                font-weight: 400;
-                font-size: 17px;
-                cursor: pointer;
-                transition: color 0.24s;
-                margin-left: 4px;
-                background: linear-gradient(to bottom, $color-white 0%, $color-white 100%);
-                background-position: 0 100%;
-                background-repeat: repeat-x;
-                background-size: 0px 0px;
-                transition: all 0.24s;
-                color: $color-white;
-                &:hover {
-                    color: $color-blueberry;
-                    background-size: 4px 58px;
-                }
-            }
-        }
-
-        @media (max-width: 520px) {
-            display: none;
-        }
-    }
-}
-.section {
-    width: 100%;
-    padding: 190px 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: $color-white;
-    position: relative;
-
-    &:not(.section--blue) {
-        padding: 0 0;
-    }
-
-    &.section--blue {
-        background: $color-blueberry;
-        padding: 200px 64px 100px;
-        @media (max-width: 520px) {
-            padding: 100px 32px 100px;
-        }
-        h2,
-        h3,
-        h4,
-        h5,
-        p,
-        p.lead,
-        a.link {
-            color: #fff;
-            border-bottom-color: #fff;
-        }
-
-        a:hover {
-            color: $color-blueberry;
-        }
-    }
-
-    &.section--center {
-        h2,
-        h3,
-        h4,
-        h5,
-        p,
-        p.lead,
-        a.link {
-            text-align: center;
-        }
-        p {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        a:hover {
-            color: $color-white;
-        }
-    }
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 64px;
-    box-sizing: border-box;
-    margin: 0 auto;
-
-    @media (max-width: 520px) {
-        padding: 0 24px;
-    }
-}
-
-.container--full {
-    width: 100vw;
-    margin-bottom: -4px;
-}
-.container--hero {
+img.screen {
     max-width: 100%;
-    padding: 0;
-}
-.container-flex {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    max-width: 1200px;
-    padding: 0 64px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    justify-content: center;
-
-    @media (max-width: 950px) {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 24px;
-    }
-
-    &.container-flex--columns {
-        flex-direction: column;
-    }
-
-    &.container-flex--rev {
-        @media (max-width: 950px) {
-            align-items: flex-start;
-            flex-direction: column-reverse;
-        }
-    }
-
-    &.container-flex--full {
-        max-width: 100%;
-        padding: 0;
-    }
+    border-radius: 8px;
+    margin: 24px auto;
+    box-shadow: 0 0 10px 5px rgba($color-black, 0.1);
 }
 
-.container-grid {
-    display: grid;
+.text-center {
     text-align: center;
-    justify-items: center;
-    grid-gap: 32px;
-    grid-template-columns: 300px 300px 300px;
-
-    @media (max-width: 960px) {
-        grid-template-columns: 100%;
-    }
-    @media (max-width: 520px) {
-        grid-template-columns: 100%;
-        grid-gap: 48px;
-    }
-
-    &.container-flex--columns {
-        flex-direction: column;
-    }
-
-    svg {
-        height: 82px;
-    }
 
     p {
-        margin: 0;
-    }
-}
-
-.team-mate {
-    padding: 62px 0;
-    box-sizing: border-box;
-
-    @media (max-width: 950px) {
-        padding: 32px;
+        margin: 0 auto;
     }
 }
 
 .craft-logo {
-    width: 64px;
-    display: block;
-    margin: 0 auto 24px auto;
+    width: 72px;
+    margin-bottom: 24px;
 }
 
-.second-item {
-    padding-top: 48px;
-    @media (max-width: 960px) {
-        padding-top: 48px;
-    }
-    @media (max-width: 520px) {
-        padding-top: 0;
-    }
-}
-
-.screen {
-    box-shadow: 0 0 10px rgba($color-cadet-grey, 0.4);
-    border-radius: 10px;
-    margin-bottom: 32px;
-    @media (max-width: 520px) {
-        border-radius: 5px;
-    }
-}
-
-button {
-    appearance: none;
-    outline: none;
-    &.btn {
-        background: $color-blueberry;
-        padding: 0 32px;
-        height: 48px;
-        color: $color-white;
-        display: block;
-        text-transform: uppercase;
-        font-size: 17px;
-        font-weight: 700;
-        border-radius: 24px;
-        border: none;
-        margin: 48px auto 0 auto;
-        cursor: pointer;
-        transition: all 0.24s;
-        box-shadow: 0 0 1px 7px lighten($color-blueberry, 30%);
-        &:hover {
-            background: lighten($color-blueberry, 5%);
-        }
-
-        &.btn--secondary {
-            margin: 24px auto 0 auto;
-            color: $color-blueberry;
-            text-transform: initial;
-            border-radius: 0;
-            padding: 0 8px;
-            background: linear-gradient(to bottom, $color-blueberry 0%, $color-blueberry 100%);
-            background-position: 0 100%;
-            background-repeat: repeat-x;
-            background-size: 4px 4px;
-            transition: all 0.24s;
-
-            &:hover {
-                background-size: 4px 50px;
-                color: $color-white;
-            }
-        }
-    }
-}
-
-.about-block {
-    padding: 92px 0;
-    p {
-        max-width: 530px;
-        text-align: center;
-    }
-    svg {
-        max-width: 520px;
-        width: 50%;
-        &:first-child {
-            transform: scaleX(-1);
-            margin-right: 48px;
-        }
-        &:last-child {
-            margin-left: 48px;
-        }
-        @media (max-width: 950px) {
-            width: 100%;
-            &:first-child {
-                margin-top: 32px;
-                margin-right: 0;
-            }
-            &:last-child {
-                margin-left: 0;
-            }
-        }
-    }
-
-    @media (max-width: 520px) {
-        padding: 24px 0;
-    }
-
-    @media (max-width: 950px) {
-        align-items: center;
-    }
-
-    &.container-flex--columns {
-        flex-direction: column;
-    }
-
-    &.container-flex--rev {
-        @media (max-width: 950px) {
-            align-items: center;
-        }
-    }
-}
-
-.decoration-top {
-    width: calc(100vw + 2px);
-    margin-bottom: 150px;
-    margin-left: -1px;
-    margin-right: -1px;
-    height: auto;
-}
-
-.decoration-bottom {
-    width: calc(100vw + 2px);
-    margin-left: -1px;
-    margin-right: -1px;
-    height: auto;
-    margin-top: 10px;
-}
-
-#about {
-    padding-top: 50px;
-    padding-bottom: 0;
-}
-#contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.align-center {
-    text-align: center;
-}
-
-span.hide {
-    @media (max-width: 550px) {
+.margin-left {
+    margin-left: 64px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    @media (max-width: $breakpoint-desktop) {
         display: none;
     }
 }
 
-small {
-    display: block;
-    color: $color-white;
-    padding-top: 48px;
-    opacity: 0.4;
+.margin-right {
+    margin-right: 64px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    @media (max-width: $breakpoint-desktop) {
+        display: none;
+    }
+}
+
+.avatar {
+    display: none;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin: 48px 0 24px 0;
+    border: 4px $color-blueberry solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 1px 7px lighten($color-blueberry, 30%);
+    @media (max-width: $breakpoint-desktop) {
+        display: block;
+    }
 }
