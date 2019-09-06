@@ -3,12 +3,13 @@ h1 {
     font-family: $font-primary;
     position: absolute;
     font-weight: 500;
-    padding: 0;
+    padding: 0 0 32px 0;
     margin: 0;
-    bottom: 64px;
+    bottom: 128px;
     left: 48px;
     right: 48px;
     display: block;
+    box-sizing: border-box;
     line-height: 1;
     max-width: 16ch;
     color: $color-white;

@@ -5,7 +5,7 @@ function Roadmap(props) {
                 <h2>On Our Roadmap</h2>
                 <p className="lead">
                     While you’re trying Litehouse Craft, we’ll be working hard on our other
-                    products. Meet The Team
+                    products.
                 </p>
             </div>
             <div className="container container--grid">

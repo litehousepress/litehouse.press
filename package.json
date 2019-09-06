@@ -24,6 +24,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-loading-screen": "^0.0.17",
     "react-reveal": "^1.2.2"
   }
 }

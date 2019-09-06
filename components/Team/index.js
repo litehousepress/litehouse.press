@@ -26,13 +26,12 @@ function Products(props) {
                         <h3>Tomáš Randus</h3>
                         <h4>Chief Technology Officer, co-founder</h4>
                         <p>
-                            Years of cooperation with media houses, freelance journalists and NGOs
-                            brought us together. Software engineer and enthusiastic innovator with a
-                            extensive experience in media literacy and education. Over the last two
-                            decades, he has worked in media and business environments at Sanoma
-                            Media, Radio Free Europe/Radio Liberty, and Citrix. He has also founded,
-                            or been a part of, several startup companies. Tomáš earned a Masters in
-                            New Media from Charles University in Prague.
+                            Software engineer and enthusiastic innovator with a extensive experience
+                            in media literacy and education. Over the last two decades, he has
+                            worked in media and business environments at Sanoma Media, Radio Free
+                            Europe/Radio Liberty, and Citrix. He has also founded, or been a part
+                            of, several startup companies. Tomáš earned a Masters in New Media from
+                            Charles University in Prague.
                         </p>
                     </div>
                 </Fade>

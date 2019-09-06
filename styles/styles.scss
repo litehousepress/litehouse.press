@@ -10,6 +10,12 @@ body {
     overflow-x: hidden;
 }
 
+body,
+html {
+    width: 100vw;
+    height: 100%;
+}
+
 img.screen {
     max-width: 100%;
     border-radius: 8px;
@@ -60,5 +66,27 @@ img.screen {
     box-shadow: 0 0 1px 7px lighten($color-blueberry, 30%);
     @media (max-width: $breakpoint-desktop) {
         display: block;
+    }
+}
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: $color-blueberry;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    &.preloader--shown {
+        display: flex;
+        opacity: 0;
+        transition: opacity 1s;
     }
 }
