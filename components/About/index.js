@@ -20,10 +20,9 @@ function About(props) {
                 <div>
                     <p className="lead">
                         <Slide left>
-                            building platforms tailored to the needs of modern news organizations
-                            and journalists. Our mission is to make cutting-edge technologies like
-                            React, GraphQL, and Node.js accessible and easy-to-use for journalists
-                            and editors working to tell beautiful stories under tight deadlines.
+                            Our mission is to make cutting-edge technologies like React, GraphQL,
+                            and Node.js accessible and easy-to-use for journalists and editors
+                            working to tell beautiful stories under tight deadlines.
                         </Slide>
                     </p>
                 </div>

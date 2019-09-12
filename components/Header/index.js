@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
-function Hero(props) {
+function Header(props) {
     return (
         <header className="header">
             <div className="logo">
@@ -42,4 +42,4 @@ function Hero(props) {
     );
 }
 
-export default Hero;
+export default Header;

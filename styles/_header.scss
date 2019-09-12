@@ -55,4 +55,10 @@ header {
             display: none;
         }
     }
+
+    &.header--inverted {
+        * {
+            color: $color-blueberry;
+        }
+    }
 }
