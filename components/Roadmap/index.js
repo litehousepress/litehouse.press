@@ -48,7 +48,7 @@ function Roadmap(props) {
                         journalism.
                     </p>
                 </div>
-                <div className="grid-item">
+                {/*<div className="grid-item">
                     <svg viewBox="0 0 80 80">
                         <g id="Web" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                             <g
@@ -134,7 +134,7 @@ function Roadmap(props) {
                     </svg>
                     <h5>Newsroom</h5>
                     <p>Ultimate content management system built by journalists for journalists.</p>
-                </div>
+    </div>*/}
             </div>
         </section>
     );

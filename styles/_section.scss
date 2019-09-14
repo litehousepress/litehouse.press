@@ -70,7 +70,7 @@
             display: grid;
             max-width: 800px;
             grid-gap: 32px;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             margin: 64px auto 0 auto;
             align-items: top;
             @media (min-width: $breakpoint-desktop) {
