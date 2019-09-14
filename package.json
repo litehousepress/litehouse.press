@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DecentDescent/litehouse.press.git"
+    "url": "git+https://github.com/litehousepress/litehouse.press.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DecentDescent/litehouse.press/issues"
+    "url": "https://github.com/litehousepress/litehouse.press/issues"
   },
-  "homepage": "https://github.com/DecentDescent/litehouse.press#readme",
+  "homepage": "https://github.com/litehousepress/litehouse.press#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "next": "^8.1.0",
