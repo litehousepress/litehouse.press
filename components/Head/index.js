@@ -15,6 +15,7 @@ export default () => (
             property="og:description"
             content="We are a team of experienced journalists, storytellers, developers, designers and creative experts that are building platforms tailored to the needs of modern news organizations and freelance journalists."
         />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.litehouse.press" />
         <link
